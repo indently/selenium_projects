@@ -25,5 +25,11 @@ for re_match in re.finditer(EMAIL_REGEX, page_source):
 for i, email in enumerate(list_of_emails):
     print(f'{i + 1}: {email}')
 
+#send a custom message to the emails 
+for x in list_of_emails:
+    print("Hello," + x + "i hope this finds you well please revert back to my email " )
+
+
+
 # Close the driver since we don't need it
 driver.close()
